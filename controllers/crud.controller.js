@@ -17,8 +17,6 @@ export const getPreguntas = async (req, res) => {
 }
 
 
-
-
 // method POST para registrar una nueva pregunta
 export const InsertPregunta = async (req, res) => {
 

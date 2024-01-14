@@ -2,9 +2,7 @@
 
 import express from 'express'
 
-// importo la ruta de mensajes
-import messages_routes from './routes/message.router.js'
-// importo la ruta de mensajes
+// importo la ruta del crud
 import crud_mesages from './routes/crud.router.js'
 
 import cors from 'cors'
@@ -22,7 +20,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(cors())
 
 // indico que voy a usar la ruta
-app.use('/api',messages_routes)
+
 app.use('/api',crud_mesages)
 
 // defino ruta 404
