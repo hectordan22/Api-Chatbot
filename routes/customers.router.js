@@ -8,13 +8,13 @@ import {getCustomers, insertCustomer,updateCustomer, deleteCustomer} from '../co
 const router = Router()
 
 
-router.get('/coindraw/configurar', getCustomers)
+router.get('/coindraw/getCustomers', getCustomers)
 
-router.post('/coindraw/configurar', insertCustomer)
+router.post('/coindraw/insertCustomer', insertCustomer)
 
-router.put('/coindraw/configurar/:id', updateCustomer)
+router.put('/coindraw/updateCustomer/:id', updateCustomer)
 
-router.delete('/coindraw/configurar/:id', deleteCustomer)
+router.delete('/coindraw/deleteCustomer/:id', deleteCustomer)
 
 
 // exporto las rutas para que se usen desde index.js
