@@ -3,12 +3,14 @@ import {Router} from 'express'
 
 // importo las funciones controladoras de la ruta
 
-import {getCustomers, insertCustomer,updateCustomer, deleteCustomer} from '../controllers/customers.controller.js'
+import {getCustomers, insertCustomer,updateCustomer, deleteCustomer, getCustomer} from '../controllers/customers.controller.js'
 
 const router = Router()
 
 
 router.get('/coindraw/getCustomers', getCustomers)
+
+router.get('/coindraw/getCustomer/:id', getCustomer)
 
 router.post('/coindraw/insertCustomer', insertCustomer)
 
