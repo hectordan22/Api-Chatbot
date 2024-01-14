@@ -2,8 +2,8 @@
 
 import express from 'express'
 
-// importo la ruta del crud
-import crud_mesages from './routes/crud.router.js'
+// importo la ruta del CRUD de los clientes
+import customers from './routes/customers.router.js'
 
 import cors from 'cors'
 
@@ -21,7 +21,7 @@ app.use(cors())
 
 // indico que voy a usar la ruta
 
-app.use('/api',crud_mesages)
+app.use('/api',customers)
 
 // defino ruta 404
 app.use((req,res,next) => {
