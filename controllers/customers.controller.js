@@ -214,7 +214,7 @@ export const updateCustomer = async (req, res) => {
     } catch (error) {
         console.log(error.message)
         return res.status(500).json({
-            message: 'La ruta solicitada no esta disponible temporalmente debido a un error inesperado'
+            message: 'Ha ocurrido temporalmente debido a un error inesperado'
         })
     }
 
